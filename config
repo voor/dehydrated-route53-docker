@@ -1,0 +1,7 @@
+CHALLENGETYPE="dns-01"
+HOOK=./hook.sh
+HOOK_CHAIN="no"
+LOCKFILE=/tmp/lock
+CHAINCACHE=/chains
+CERTDIR=/certs
+ACCOUNTDIR=/accounts
