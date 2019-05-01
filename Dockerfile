@@ -11,8 +11,8 @@ RUN apt-get update && apt-get install -y \
     && apt-get purge --auto-remove -y  \
     && rm -rf /var/lib/apt/lists/* \
     && groupadd -r dehydrated && useradd -r -g dehydrated dehydrated \
-    && mkdir -p /accounts /certs /chains \
-    && chown dehydrated:dehydrated /accounts /certs /chains
+    && mkdir -p /home/dehydrated /accounts /certs /chains \
+    && chown dehydrated:dehydrated /home/dehydrated /accounts /certs /chains
 
 WORKDIR /home/dehydrated
 
