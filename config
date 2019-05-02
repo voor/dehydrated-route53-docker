@@ -1,7 +1,8 @@
 CHALLENGETYPE="dns-01"
-HOOK=./hook.sh
+HOOK=/home/dehydrated/hook.sh
 HOOK_CHAIN="no"
 LOCKFILE=/tmp/lock
 CHAINCACHE=/chains
 CERTDIR=/certs
 ACCOUNTDIR=/accounts
+DOMAINS_TXT=/home/dehydrated/domains.txt
