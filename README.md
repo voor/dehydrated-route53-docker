@@ -6,10 +6,16 @@ In particular, this container is leveraged in a [Concourse](https://concourse-ci
 
 ## Usage
 
-If this is your first time using the container, go into the directory you want to save your letsencrypt account (it'll end up in an `accounts` folder), your certificates (ends up in a `certs` folder).  Create a `domains.txt` folder that contains the domain you want to create, for example:
+If this is your first time using the container:
 
-```
-example.com *.example.com *.dev.example.com *.sys.dev.example.com *.uaa.sys.dev.example.com *.login.sys.dev.example.com *.apps.dev.example.com
-```
-
-Then run `run.sh` (or look at the docker `run` command inside it for a general idea of what is going on)
+1. Go into the directory you want to save your letsencrypt account (it'll end up in an `accounts` folder), your certificates (ends up in a `certs` folder).  
+2. Create a `domains.txt` folder that contains the domain you want to create, for example:
+    ```
+    example.com *.example.com *.dev.example.com *.sys.dev.example.com *.uaa.sys.dev.example.com *.login.sys.dev.example.com *.apps.dev.example.com
+    ```
+3. Make sure your AWS credentials are populated in environment variables:
+    ```
+    export AWS_ACCESS_KEY_ID=blahblahblah
+    export AWS_SECRET_ACCESS_KEY=blahblahblah
+    ```
+4. Then run `run.sh` (or look at the docker `run` command inside it for a general idea of what is going on)
