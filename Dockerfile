@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y \
     && mkdir -p /home/dehydrated /accounts /certs /chains \
     && chown dehydrated:dehydrated /home/dehydrated /accounts /certs /chains
 
-RUN curl -sSL https://github.com/lukas2511/dehydrated/releases/download/v0.6.2/dehydrated-0.6.2.tar.gz \
+RUN curl -sSL https://github.com/lukas2511/dehydrated/releases/download/v0.6.5/dehydrated-0.6.5.tar.gz \
     | tar xvz -C /home/dehydrated --strip-components 1
 
 RUN curl -SsL https://raw.githubusercontent.com/whereisaaron/dehydrated-route53-hook-script/v0.4.1/hook.sh \
